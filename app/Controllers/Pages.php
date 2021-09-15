@@ -23,9 +23,6 @@ class Pages extends Controller
     $data['page_id'] = $page;
 
 		echo view('templates/header', $data);
-    if($page != "login"){
-      echo view('templates/leftMenu', $data);
-    }
 		echo view('pages/'.$page, $data);
 		echo view('templates/footer', $data);
     }
